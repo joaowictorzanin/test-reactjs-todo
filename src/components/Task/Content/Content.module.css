@@ -1,0 +1,32 @@
+.taskIncomplete{
+    color: var(--gray-400);
+}
+
+.taskComplete{
+    color: var(--gray-300);
+    text-decoration: line-through;
+}
+
+.container{
+    display: flex;
+    gap: 1rem;
+}
+
+.input{
+    background: transparent;
+    border: transparent;
+    border-bottom: 1.5px solid var(--gray-300);
+    font-size: 0.875rem;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: var(--blue);
+    border: transparent;
+    border-radius: 50%;
+    color: var(--white);
+}
