@@ -1,47 +1,10 @@
-# Teste React
+# Projeto Teste ToDo
 
-#### Crie, utilizando React com Redux, uma lista de tarefas (Todo), onde deverá ser possível:
+### Deploy do Projeto:
+https://test-reactjs-todo.vercel.app/
 
-- Listar Todas as Tarefas
-- Listar as tarefas ainda não concluídas
-- Listar as tarefas já concluídas
-- Marcar determinada tarefa como concluída (Mostrar visualmente que foi concluída)
-- Inserir novas tarefas
-- Alterar a descrição de uma tarefa
-- Excluir tarefa da lista
-- Exibir contadores: Total de tarefas, Tarefas concluídas e Não concluídas
+- Foi utilizado o vite para criar as dependencias padrões, Redux para fazer o gerenciamento de estado.
 
-Obs[1]: As tarefas deverão ser armazenadas no LocalStorage do navegador
+- Para iniciar o projeto em sua maquina utilizar o comando 'npm install'
 
-Obs[2]: Utilizar redux para controlar o estado da aplicação
-
-Obs[3]: Aplicar comentários explicando cada função utilizada
-
-Obs[4]: Design/Layout livre
-
-Pontos que serão avaliados:
-- Qualidade do Código
-- Design/Layout da aplicação
-- Componentização
-
-
-
-                        taskStyle == 'any' || taskStyle == 'notFinished' 
-                        ?
-                        <NoTask 
-                            Title='Você ainda não tem tarefas cadastradas.' 
-                            Description='Crie Tarefas e organize seu dia!'
-                        /> 
-                        : 
-                        <NoTask 
-                            Title='Você ainda não concluiu nenhuma tarefas.' 
-                            Description='Suas tarefas finalisadas irão aparecer aqui!'
-                        /> 
-                    }
-                    <Task/>
-
-                    <p 
-                    className={toggle == false || setStyle == 'finished' ? styles.taskComplete : styles.taskIncomplete}
-                >
-                    {content}
-                </p>
+- Para iniciar o servidor utilizar o comando 'npm run dev'
