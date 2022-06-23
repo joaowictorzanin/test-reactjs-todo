@@ -1,18 +1,23 @@
 import styles from './Header.module.css';
 import logo from '../../assets/to-do.png'
 import { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { addNewTask } from '../../store/actions/notCompletedTasks.action';
 
 
-export function Header({createTask}){
+export function Header(){
+    const dispatch = useDispatch()
     const [newTask, setNewTask] = useState('')
 
+    //função responsavel por capturar os dados inseridos no input
     function handleChange(event){
         setNewTask(event.target.value);
     }
 
+    //função responsavel pela criação de uma nova task
     function handleSubmit(event){
         event.preventDefault()
-        createTask(newTask);
+        dispatch(addNewTask(newTask))
         setNewTask('')
     }
 

@@ -75,3 +75,27 @@
 .trash:hover{
     color: var(--danger);
 }
+
+.contentContainer{
+    display: flex;
+    gap: 1rem;
+}
+
+.input{
+    background: transparent;
+    border: transparent;
+    border-bottom: 1.5px solid var(--gray-300);
+    font-size: 0.875rem;
+}
+
+.setButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: var(--blue);
+    border: transparent;
+    border-radius: 50%;
+    color: var(--white);
+}
