@@ -59,6 +59,11 @@
     background-color: var(--gray-100);
 }
 
+@media (max-width: 768px){
+    .header{
+        flex-direction: column;
+    }
+}
 
 
 
