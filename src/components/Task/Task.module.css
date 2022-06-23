@@ -99,3 +99,9 @@
     border-radius: 50%;
     color: var(--white);
 }
+
+@media (max-width: 768px) {
+    .input{
+        width: 60%;
+    }
+}
